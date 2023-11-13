@@ -1,11 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  padding: 1.75rem;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+h2 {margin-bottom: 10px;}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +45,97 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form input, form select {
+  outline: none !important;
+    border: 1px solid #DCDCDC;
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    display: block;
+    position: relative;
+    width: 100%;
+    line-height: 1.25;
+    background-image: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-clip: padding-box;
+    background-color: transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+
+form label, .term-label {
+  font-size: 0.75rem;
+}
+
+
+
+.text-center {text-align: center !important;}
+
+.formgrid {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.formrow {
+  display: -ms-flexbox !important;
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -moz-box !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.form-50 {
+  -ms-flex: 0 0 50% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+
+
+.form-33 {
+  -ms-flex: 0 0 33.33% !important;
+  flex: 0 0 33.33% !important;
+  max-width: 33.33% !important;
+}
+
+.Display {
+  margin-top: 1.7rem;
+  text-align: center;
+}
+
+.Display span {
+  color: #28a745;
+  font-weight: bold;
+}
+
+#submit-btn {
+  cursor: pointer;
+  transition: all .2s ease-out;
+  text-transform: uppercase;
+
+  outline: none;
+  text-align: center;
+  
+    position: relative;
+    border: 1px solid transparent;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    background-color: #F5F5F5;
+    line-height: 1.25;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #008B8B;
+    color: #FFFFFF;
 }
